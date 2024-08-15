@@ -1,2 +1,2 @@
-# ReadImagine.in
-ReadImagine is a website which provides You the Previous Year Questions of JUT(Jharkhand University of Technology).
+# Scholar Stuffs
+Scholar Stuffs is a website which provides You the Previous Year Questions and Syllabus of JUT(Jharkhand University of Technology).
