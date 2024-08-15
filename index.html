@@ -1,485 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReadImagine</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="content">
-        <header>
-            <div class="logo"><img src="Logo.jpg" alt="logo" width="100px"></div>
-            <h1>Welcome To ReadImagine.in</h1>
+    
+    <header>
+       
+        <h1>SCHOLAR STUFFS</h1>
+       
+    </header>
+    
+    <div class="big-container">
+        <div class="cube-container">
+            <div class="cube-row" id="row-1">
+                <!-- Seven cubes for the first row -->
+            </div>
+            <div class="cube-row" id="row-2">
+                <!-- Six cubes for the second row -->
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="home">
+       <h2>JUT PYQs</h2>
+            <div class="box" onclick="toggleContent('content1')"> 1 <sup>st</sup> Year  PYQs
+                <div class="sub-content" id="content1">
+                    <div class="main-container">
+                        <div class="main-div">
+                            <h2 class="h22">1 <sup>st</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>ALL BRANCHES</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13k5zpTH8Ptle8HfU8fbQaPDpG40cQOk7/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2021PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/14EkOB5RlmnBG4qq7xskT0HaWxR8mZecD/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.2')">2023PYQ</button></a>
+                            </div>
 
-            <nav>
-                JUT PYQs
-                <ul>
-                  
-                        <li><a href="#section1">1<sup>st </sup>Year</a></li>
-                        <li><a href="#section2">2<sup>nd </sup>Year</a></li>
-                      
-                        <li><a href="#section5">3<sup>rd </sup>Year</a></li>
-                        <li><a href="#section6">4<sup>th </sup>Year</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="container">
-                <div class="box" onclick="scrollToSection('section1')">
-                    <div class="inner">
-                        <div class="circle">
-                            1<sup>st </sup>Year
+                            <!-- Repeat sub-divs here -->
                         </div>
-                        <button>1 <sup>st</sup> Semester</button>
-                        <button>2 <sup>nd</sup> Semester</button>
-                    </div>
-                </div>
+                        <div class="main-div">
+                            <h2 class="h22">2 <sup>nd</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>ALL BRANCHES</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13hKFOWDxhtSYnRt28adVhSiVphF1f3yG/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2022PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/13sWdI95kjE-zXdTdc7F5-BuIGaHbPb0G/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 2.2')">2023PYQ</button></a>
+                            </div>
 
-                <div class="box" onclick="scrollToSection('section2')">
-                    <div class="inner">
-                        <div class="circle">
-                            2<sup>nd </sup>Year
+
+                            <!-- Repeat sub-divs here -->
                         </div>
-                        <button>3 <sup>rd</sup> Semester</button>
-                        <button>4 <sup>th</sup> Semester</button>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="innerLove">
-                        <h5>Calculate Your Love Percentage <span> (just for fun)</span></h5>
-                               
-                        <input type="text" id="input1" placeholder="Enter Your Crush Name">
-                        <input type="text" id="input2" placeholder="Enter Your Name">
-                        <button onclick="generateNumber()">Generate Love %</button>
-                        <p id="result"></p>
-
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="innerToss">
-                        <div class="ct">
-                            <span class="c">Confusion..?</span>
-                            <span class="t">Toss a Coin</span>
-
-                        </div>
-                        <div class="forCoinToss">
-                            <div class="coin" id="coin">Heads or Tails</div>
-                            <button onclick="tossCoin()">Toss the Coin</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box" onclick="scrollToSection('section5')">
-                    <div class="inner">
-                        <div class="circle">
-                            3<sup>rd </sup>Year
-                        </div>
-                        <button>5 <sup>th</sup> Semester</button>
-                        <button>6 <sup>th</sup> Semester</button>
-                    </div>
-                </div>
-
-                <div class="box" onclick="scrollToSection('section6')">
-                    <div class="inner">
-                        <div class="circle">
-                            4<sup>th </sup>Year
-                        </div>
-                        <button>7 <sup>th</sup> Semester</button>
-                        <button>8 <sup>th</sup> Semester</button>
                     </div>
                 </div>
             </div>
-            <section id="section1" class="content-section">
-                <div class="main-container">
-                    <h2 class="sub-head"> 1<sup>st </sup>Year</h2>
-                    <div class="main-div">
-                        <h2 class="h22">1 <sup>st</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>ALL BRANCHES</h3>
-                            <a href="https://drive.google.com/file/d/13k5zpTH8Ptle8HfU8fbQaPDpG40cQOk7/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2021PYQ</button></a>
-                            <a href="https://drive.google.com/file/d/14EkOB5RlmnBG4qq7xskT0HaWxR8mZecD/view?usp=drivesdk"><button onclick="buttonClick('Button 1.2')">2023PYQ</button></a>
+            <div class="box" onclick="toggleContent('content2')"> 2 <sup>nd</sup> Year  PYQs
+                <div class="sub-content " id="content2">
+                    <div class="main-container">
+                        <div class="main-div">
+                            <h2 class="h22">3 <sup>rd</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>CIVIL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13rAj0P7t19bFDgdxbJGU5wKi4o0Nvcts/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">NA</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>CHEMICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14cmZMGm0I8thyn3U_etO6TPcW5cFQ1rR/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">NA</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>COMPUTER SCIENCE</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRONICS</h3>
+                                <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>INFORMATION TECHNOLOGY</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MECHANICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13vgYsK7s7YynaYx1XVxXps1KKrC2FA9K/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>METALLURGY</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MINING</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>PRODUCTION</h3>
+                                <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <!-- Repeat sub-divs here -->
+                        </div>
+                        <div class="main-div">
+                            <h2 class="h22">4 <sup>th</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>CIVIL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14ytiL7SPiaI8-fUr1f9fLzcyfWSrE8cy/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2022PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+
+                            <div class="sub-div">
+                                <h3>CHEMICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13C8bFAePRqb-B2IpxY7MrxyR3CT9zNOx/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2022PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>COMPUTER SCIENCE</h3>
+                                <a href=""><button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13QTTY_PBUWXHI0yKZpLbkFDzrvzkwe9Q/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRONICS</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>INFORMATION TECHNOLOGY</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MECHANICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>METALLURGY</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MINING</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>PRODUCTION</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <!-- Repeat sub-divs here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" onclick="toggleContent('content3')"> 3 <sup>rd</sup> Year PYQs
+                <div class="sub-content" id="content3">
+                    <div class="main-container">
+
+                        <div class="main-div">
+                            <h2 class="h22">5 <sup>th</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>CIVIL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13VNwFk4PKYotubvo0AXBAA8Hh9fmnEb1/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/13WBTara1AYsfaZ2va-o-pIfYM5Oo-Kpy/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.2')">2022PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>CHEMICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>COMPUTER SCIENCE</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14vlbNec-PyU7tTJ5thDzTO01xQf0rydJ/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRONICS</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14xkTmw257NZBZEApitnX-oI_9_qI59eZ/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/14xuc8dNW5OkXpF2-lfhIOEcjOYNks2Lx/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 1.2')">2023PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>INFORMATION TECHNOLOGY</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MECHANICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14xQoYUCnCZdobLfN6O-cTYmSRCf5lRtS/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/14wfam1QzHyow5qgVCFGcBSPACa3N2SF5/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 1.2')">2022PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>METALLURGY</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MINING</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>PRODUCTION</h3>
+                                <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <!-- Repeat sub-divs here -->
+                        </div>
+                        <div class="main-div">
+                            <h2 class="h22">6 <sup>th</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>CIVIL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/13DDo_cG5XUCBSmatSIZKtwNAePPJioIN/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
+                                <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+
+                            <div class="sub-div">
+                                <h3>CHEMICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>COMPUTER SCIENCE</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/12YOMW_Xid8UvN_6SX_VxGu-8nDwncxPs/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/15to1xTDl8wtq8ItlSOsk0jgpb_CyBEaZ/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 2.2')">2022PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14w_c1d6VurfO9kIwoXBYCbtHONr9Ld4k/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRONICS</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>INFORMATION TECHNOLOGY</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/12YOMW_Xid8UvN_6SX_VxGu-8nDwncxPs/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MECHANICAL</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14rrMmZuZo2OkQ3IYxIhCRemVIV4NYeMw/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/14ryxC241FGHHpb39TPHhPvFETlq5wyPA/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.2')">2022PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>METALLURGY</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MINING</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14oQvosBTb5AT22L03bnH2nv0Wa0G92n-/view?usp=drivesdk">
+                                    <button onclick="buttonClick('Button 2.1')">2022PYQ</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>PRODUCTION</h3>
+                                <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
+                            </div>
+                            <!-- Repeat sub-divs here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" onclick="toggleContent('content4')"> Final Year  PYQs
+                <div class="sub-content" id="content4">
+                    <div class="main-container">
+
+                        <div class="main-div">
+                            <h2 class="h22">7 <sup>th</sup> Semester</h2>
+                            <div class="sub-div">
+                                <h3>CIVIL</h3>
+                                <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>CHEMICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>COMPUTER SCIENCE</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14DqN6KqbIW5Cu-m6m9wXMYb7wKpodiaZ/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/14fh7eC78AQvbtNR6QhRoaH3pyi60e2iG/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.2')">2022PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>ELECTRONICS</h3>
+                                <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>INFORMATION TECHNOLOGY</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/14DqN6KqbIW5Cu-m6m9wXMYb7wKpodiaZ/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
+                                <a
+                                    href="https://drive.google.com/file/d/14fh7eC78AQvbtNR6QhRoaH3pyi60e2iG/view?usp=drivesdk"><button
+                                        onclick="buttonClick('Button 1.2')">2022PYQ</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MECHANICAL</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>METALLURGY</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>MINING</h3>
+                                <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <div class="sub-div">
+                                <h3>PRODUCTION</h3>
+                                <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
+                                <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
+                            </div>
+                            <!-- Repeat sub-divs here -->
                         </div>
                        
-                        <!-- Repeat sub-divs here -->
-                    </div>
-                    <div class="main-div">
-                        <h2 class="h22">2 <sup>nd</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>ALL BRANCHES</h3>
-                            <a href="https://drive.google.com/file/d/13hKFOWDxhtSYnRt28adVhSiVphF1f3yG/view?usp=drivesdk"> <button onclick="buttonClick('Button 2.1')">2022PYQ</button></a>
-                            <a href="https://drive.google.com/file/d/13sWdI95kjE-zXdTdc7F5-BuIGaHbPb0G/view?usp=drivesdk"><button onclick="buttonClick('Button 2.2')">2023PYQ</button></a>
                         </div>
-
-                     
-                        <!-- Repeat sub-divs here -->
                     </div>
                 </div>
-            </section>
+            
 
-            <section id="section2" class="content-section">
-                <div class="main-container">
-                    <h2 class="sub-head"> 2<sup>nd </sup>Year</h2>
-                    <div class="main-div">
-                        <h2 class="h22">3 <sup>rd</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>CIVIL</h3>
-                            <a href="https://drive.google.com/file/d/13rAj0P7t19bFDgdxbJGU5wKi4o0Nvcts/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">NA</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>CHEMICAL</h3>
-                            <a href="https://drive.google.com/file/d/14cmZMGm0I8thyn3U_etO6TPcW5cFQ1rR/view?usp=drivesdk"> <button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">NA</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>COMPUTER SCIENCE</h3>
-                            <a href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRONICS</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>INFORMATION TECHNOLOGY</h3>
-                            <a href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MECHANICAL</h3>
-                            <a href="https://drive.google.com/file/d/13vgYsK7s7YynaYx1XVxXps1KKrC2FA9K/view?usp=drivesdk"> <button onclick="buttonClick('Button 1.1')">2022PYQ</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>METALLURGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MINING</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>PRODUCTION</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <!-- Repeat sub-divs here -->
-                    </div>
-                    <div class="main-div">
-                        <h2 class="h22">4 <sup>th</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>CIVIL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-
-                        <div class="sub-div">
-                            <h3>CHEMICAL</h3>
-                            <a href="https://drive.google.com/file/d/13C8bFAePRqb-B2IpxY7MrxyR3CT9zNOx/view?usp=drivesdk"> <button onclick="buttonClick('Button 2.1')">2022PYQ</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>COMPUTER SCIENCE</h3>
-                            <a href=""><button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRICAL</h3>
-                            <a href="https://drive.google.com/file/d/13QTTY_PBUWXHI0yKZpLbkFDzrvzkwe9Q/view?usp=drivesdk"> <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRONICS</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>INFORMATION TECHNOLOGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MECHANICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>METALLURGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MINING</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>PRODUCTION</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <!-- Repeat sub-divs here -->
-                    </div>
-                </div>
-
-            </section>
-
+            
+        </section>
         
-
-
-            <section id="section5" class="content-section">
-                <div class="main-container">
-                    <h2 class="sub-head"> 3<sup>rd </sup>Year</h2>
-                    <div class="main-div">
-                        <h2 class="h22">5 <sup>th</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>CIVIL</h3>
-                            <a href="https://drive.google.com/file/d/13VNwFk4PKYotubvo0AXBAA8Hh9fmnEb1/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
-                            <a href="https://drive.google.com/file/d/13WBTara1AYsfaZ2va-o-pIfYM5Oo-Kpy/view?usp=drivesdk"><button onclick="buttonClick('Button 1.2')">2022PYQ</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>CHEMICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>COMPUTER SCIENCE</h3>
-                            <a href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRONICS</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>INFORMATION TECHNOLOGY</h3>
-                            <a href="https://drive.google.com/file/d/13h8mJlFzfDUKWAejgFdpDOc8W11P0XtW/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MECHANICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>METALLURGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MINING</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>PRODUCTION</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <!-- Repeat sub-divs here -->
-                    </div>
-                    <div class="main-div">
-                        <h2 class="h22">6 <sup>th</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>CIVIL</h3>
-                            <a href="https://drive.google.com/file/d/13DDo_cG5XUCBSmatSIZKtwNAePPJioIN/view?usp=drivesdk"> <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-
-                        <div class="sub-div">
-                            <h3>CHEMICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>COMPUTER SCIENCE</h3>
-                            <a href="https://drive.google.com/file/d/12YOMW_Xid8UvN_6SX_VxGu-8nDwncxPs/view?usp=drivesdk"><button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRONICS</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>INFORMATION TECHNOLOGY</h3>
-                            <a href="https://drive.google.com/file/d/12YOMW_Xid8UvN_6SX_VxGu-8nDwncxPs/view?usp=drivesdk"> <button onclick="buttonClick('Button 2.1')">2023PYQ</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MECHANICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>METALLURGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MINING</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>PRODUCTION</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <!-- Repeat sub-divs here -->
+        <section id="about">
+            <h2>ABOUT US</h2>
+            <div class="sp-container">
+                <div class="scene">
+                    <div class="sphere">
+                        <div class="circle" style="--i:0"></div>
+                        <div class="circle" style="--i:1"></div>
+                        <div class="circle" style="--i:2"></div>
+                        <div class="circle" style="--i:3"></div>
+                        <div class="circle" style="--i:4"></div>
+                        <div class="circle" style="--i:5"></div>
+                        <div class="circle" style="--i:6"></div>
+                        <div class="circle" style="--i:7"></div>
+                        <div class="circle" style="--i:8"></div>
+                        <div class="circle" style="--i:9"></div>
                     </div>
                 </div>
-
-            </section>
-
-
-
-            <section id="section6" class="content-section">
-                <div class="main-container">
-                    <h2 class="sub-head"> 4<sup>th </sup>Year</h2>
-                    <div class="main-div">
-                        <h2 class="h22">7 <sup>th</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>CIVIL</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>CHEMICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>COMPUTER SCIENCE</h3>
-                            <a href="https://drive.google.com/file/d/14DqN6KqbIW5Cu-m6m9wXMYb7wKpodiaZ/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRONICS</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>INFORMATION TECHNOLOGY</h3>
-                            <a href="https://drive.google.com/file/d/14DqN6KqbIW5Cu-m6m9wXMYb7wKpodiaZ/view?usp=drivesdk"><button onclick="buttonClick('Button 1.1')">2023PYQ</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MECHANICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>METALLURGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MINING</h3>
-                            <a href=""> <button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>PRODUCTION</h3>
-                            <a href=""><button onclick="buttonClick('Button 1.1')">Button 1.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 1.2')">Button 1.2</button></a>
-                        </div>
-                        <!-- Repeat sub-divs here -->
-                    </div>
-                    <div class="main-div">
-                        <h2 class="h22">8 <sup>th</sup> Semester</h2>
-                        <div class="sub-div">
-                            <h3>CIVIL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-
-                        <div class="sub-div">
-                            <h3>CHEMICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>COMPUTER SCIENCE</h3>
-                            <a href=""><button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""><button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>ELECTRONICS</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>INFORMATION TECHNOLOGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MECHANICAL</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>METALLURGY</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>MINING</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <div class="sub-div">
-                            <h3>PRODUCTION</h3>
-                            <a href=""> <button onclick="buttonClick('Button 2.1')">Button 2.1</button></a>
-                            <a href=""> <button onclick="buttonClick('Button 2.2')">Button 2.2</button></a>
-                        </div>
-                        <!-- Repeat sub-divs here -->
-                    </div>
+                <div class="about-text">
+                    Hi Everyone, My self Nishant, Final Year CSE Student, BIT Sindri. Welcome to SCHOLARSTUFFS.com, a dedicated resource designed to help students easily access and download previous year JUT question papers. We understand the importance of these papers in your academic preparation and strive to provide a comprehensive collection to support your studies. While we have gathered a substantial number of question papers, we acknowledge that some might still be missing. We sincerely apologize for any inconvenience this may cause and kindly request your assistance in making our collection more complete. If you have any question papers that are not currently available on our site, we encourage you to upload them to help your fellow students. Together, we can build a more valuable resource for everyone.
                 </div>
-            </section>
-        </main>
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            <h2>CONTACT US</h2>
+            <div class="wave-background">
+                <div class="contact-text">
+                   
+If you have any previous year question papers that are not currently available on our site, we would greatly appreciate your contribution to our growing collection. Please send the papers to us at  <a href="mailto:">readimagine720@gmail.com</a> , and help other students benefit from your generosity. We sincerely thank you for your support in making this platform a more comprehensive resource for all.
+                </div>
+            </div>
+        </section>
+        
+        <section id="game">
+          
 
-    </div>
+            <div id="main-div" class="collapsed">
+                <h5>Love Predictor </h5>
+                               
+                        <input type="text" id="input1" placeholder="Enter Your Name">
+                        <input type="text" id="input2" placeholder="Enter Your Crush Name">
+                        <button onclick="generateNumber()">Generate %</button>
+                        <p id="result"></p>
+                        Note: It is just for fun, don't take it seriously.
+            </div>
+            <button id="toggle-button">Just for Fun</button>
+        </section>
+    </main>
+    
     <footer>
-        Welcome to ReadImagine. Here you can get Previous Year Question Papers of JUT( Jharkhand University of Technology). <p>&copy; 2024 ReadImagine. All rights reserved</p>
-
+       <p>&copy; 2024 ReadImagine. All rights reserved</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
